@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/2-removebg-previewedit.png" type="image/x-icon" />
+    <title>Login page | MEDIVERSE</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #efe6fb;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #c6e7ff;
+      }
+
+      .main-container {
+        width: 1000px;
+        height: 550px;
+        display: flex;
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .left-side {
+        flex: 1;
+        padding: 60px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .left-side h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .left-side p {
+        color: #888;
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+
+      .input-box {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .input-box input {
+        width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        background-color: #d9eafd;
+        font-size: 14px;
+      }
+
+      .login-btn {
+        background-color: #3a59d1;
+        color: white;
+        padding: 15px;
+        width: 50%;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 30px;
+      }
+
+      .login-with {
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+
+      .social-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+      }
+
+      .social-btn button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: white;
+        cursor: pointer;
+        font-size: 14px;
+        width: 80%;
+      }
+
+      .social-btn img {
+        width: 20px;
+      }
+
+      .right-side {
+        flex: 1;
+        background: #1278cb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .right-side .image-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        height: auto;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.286);
+        padding: 0 0 50px 0;
+      }
+
+      .right-side .image-box img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 15px;
+        transform: scale(1.44);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-side">
+        <h2>LOGIN</h2>
+        <p>Let's get in ,Please enter your data</p>
+        <div class="input-box">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="Username" />
+        </div>
+        <div class="input-box">
+          <i class="fa-regular fa-eye-slash"></i>
+          <input type="password" placeholder="Password" />
+        </div>
+        <button class="login-btn" onclick="window.open('/main/index.html')">Login Now</button>
+        <div class="login-with">Login with Others</div>
+        <div class="social-btn">
+          <button>
+            <img src="/google.png" />
+            Login with Google
+          </button>
+          <button>
+            <img src="/facebook.png" />
+            Login with Facebook
+          </button>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="image-box">
+          <img src="/doctor-man.png" alt="Girl with Tablet" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

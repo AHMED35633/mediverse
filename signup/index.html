@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/2-removebg-previewedit.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/v4-shims.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css"
+    />
+
+    <title>Signup page | MEDIVERSE</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #efe6fb;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #c6e7ff;
+      }
+
+      .main-container {
+        width: 1000px;
+        height: 550px;
+        display: flex;
+        background: #1278cb;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .left-side {
+        flex: 1;
+        padding: 70px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .left-side h2 {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .left-side p {
+        color: white;
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+
+      .input-box {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        position: relative;
+      }
+
+      .input-box i{
+        position: absolute;
+        left: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .input-box i:hover{
+        color:#3a59d1 ;
+      }
+
+      .input-box input {
+        width: 100%;
+        padding: 12px;
+        padding-left: 42px;
+        border: 1px solid #ddd;
+        background-color: #f6f6f6;
+        font-size: 14px;
+        border-radius: 10px;
+      }
+
+      .login-btn {
+        background-color: white;
+        color: #3a59d1;
+        padding: 15px;
+        width: 50%;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 30px;
+      }
+
+      .login-with {
+        color: white;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+
+      .social-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+      }
+
+      .social-btn button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 9.9px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: white;
+        cursor: pointer;
+        font-size: 14px;
+        width: 80%;
+      }
+
+      .social-btn img {
+        width: 20px;
+      }
+
+      .right-side {
+        flex: 1;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .right-side .image-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        height: auto;
+        border-radius: 20px;
+        background-color: #f6f1f1;
+        padding: 0 0 50px 0;
+      }
+
+      .right-side .image-box img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 15px;
+        transform: scale(1.5);
+        padding-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-side">
+        <h2>SignUp</h2>
+        <p>Let's get in ,Please enter your data</p>
+        <div class="input-box">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-box">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="Username" />
+        </div>
+        <div class="input-box">
+          <i class="fa-regular fa-eye-slash"></i>
+          <input type="password" placeholder="Password" />
+        </div>
+        <button class="login-btn" onclick="window.open('/main/index.html')">SignUp Now</button>
+        <div class="login-with">SignUp with Others</div>
+        <div class="social-btn">
+          <button>
+            <img src="/google.png" />
+            SignUp with Google
+          </button>
+          <button>
+            <img src="/facebook.png" />
+            SignUp with Facebook
+          </button>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="image-box">
+          <img src="/doctor-woman.png" alt="doctor with Tablet" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background:linear-gradient(220deg , white , hwb(216 0% 3%) 89%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.contact h2 {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.6em;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 45px 45px;
+  background: rgba(255, 255, 255, 0.088);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.contact form .form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.contact form .form-row input[type="text"],
+.contact form .form-row input[type="tel"] {
+  flex: 1 1 48%;
+  width: 100%;
+  padding: 14px 18px;
+  border:none;
+  outline: none;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 1.1em;
+  box-sizing: border-box;
+}
+
+.contact form input[type="email"],
+.contact form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 14px 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.contact form textarea {
+  font-size: 1.5em;
+  height: 140px;
+}
+
+.contact form button {
+  padding: 14px 20px;
+  background-color: hwb(216 0% 3%);
+  width: 80%;
+  font-size: 1.5em;
+  font-weight: 600;
+  border: none;
+  border-radius: 23px;
+  color: #1b3c53;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+  background-color: #c3b1a7;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px;
+  }
+
+  .contact form {
+    padding: 20px 15px;
+  }
+
+  .contact form .form-row {
+    flex-direction: column;
+  }
+
+  .contact form button {
+    width: 100%;
+  }
+
+  .conclusion {
+    padding: 30px 20px;
+  }
+}
